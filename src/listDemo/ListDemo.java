@@ -11,11 +11,13 @@ public class ListDemo {
 
         // Arrays：提供操作 array 的工具方法
         Arrays.sort(numbers);
+        System.out.println(numbers[0]); // 30
+        System.out.println(numbers.length); // 3
         System.out.println(Arrays.toString(numbers)); // [10, 20, 30]
 
 
         // 2. List 是介面；ArrayList 是它的一種實作
-        List<String> names = new ArrayList<>();
+        List<String> names = new LinkedList<>();
 
         names.add("Bob");
         names.add("Alice");
